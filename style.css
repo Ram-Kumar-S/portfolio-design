@@ -1,0 +1,281 @@
+/* general styles */
+*{
+  margin: 0;
+  padding: 0;  
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.container {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+h1,h2{
+  text-shadow: 2px 2px 2px darkgray;
+  margin-bottom: 25px;
+  }
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* nav bar */
+nav {
+  background-color: black;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  width:15%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+ transition: background-color .7s linear;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  transition: color .7s linear;
+  }
+
+nav li:hover a{
+  color: black;
+ 
+}
+nav li:hover{
+  background-color: white;
+}
+
+/* header section */
+header {
+  background:  linear-gradient(to left,red,blue);
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 25px;
+  padding: 15% 10%;
+  text-align: center;
+}
+
+header h1{
+  margin-bottom: 50px;
+}
+
+header h1 span {
+  color: darkblue;
+  font-size: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header h1 span:hover {
+  color: darkorange;
+}
+
+header h2 span{
+  color:darkred;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* about me section */
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../images/about.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;  
+  line-height: 1.5;
+}
+
+.about p{
+  background-color: mediumaquamarine;
+}
+
+.about span{
+font-size: 1.5rem;
+color: maroon;
+}
+
+.education p{
+  font-size: 1.5rem;
+}
+
+.education span{
+  background-color:darkblue;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.25rem;
+ 
+}
+
+.education h3{
+  background-color: maroon;
+}
+
+.profile-img{
+  width:250px;
+  border-radius: 50%;
+}
+
+/* my skills section */
+
+.skills{
+  background-color: darkred; 
+}
+
+.skills ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.skills li {
+  background-color: orangered;
+  text-shadow: 2px 2px 2px darkgray;
+  box-shadow: 10px 10px 1px 2px violet;
+  font-size: 35px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* my project */
+
+.project {
+  background-color:darkblue;  
+}
+
+.project-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.project-items img {
+  border-radius: 50%;
+  width:30%;
+  margin: 3%;
+}
+
+/* footer */
+
+footer{
+  background-color:black;  
+}
+
+footer a:hover{
+  color:orange;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+footer .svg-inline--fa {
+  margin: 25px;
+  font-size: 65px;
+}
+
+footer .svg-inline--fa:hover {
+  color:orange;
+}
+
+/* REsponsive design  720px */
+
+@media screen and (max-width:720px){
+
+header h1 span { 
+  font-size: 50px;
+}
+
+header h2 span{  
+  font-size: 35px;
+}
+
+.about{
+  flex-direction: column;
+  align-items: center;
+}
+.education{
+  margin-top: 35px ;
+}
+.skills ul{
+  flex-direction: column;
+  }
+  .skills li{
+    width: 100%;
+  }
+  .project-items {
+    flex-direction: column;
+  }
+  .project-items img{
+    width: 100%;
+  }
+
+}
+
+/* REsponsive design  545px*/
+
+@media screen and (max-width:545px){
+
+  header h1 span {
+     font-size: 35px;
+    
+  }
+
+  nav ul{
+    display: none;
+    }
+  
+    header h2 span{
+      font-size: 25px;
+  }
+    
+}
+
+  /* REsponsive design  450px */
+
+  @media screen and (max-width:450px){
+   header h1{
+      font-size: 20px;
+    }
+    header h2{
+      font-size: 10px;
+    }
+    header h1 span {
+     font-size: 25px;
+    }
+    header h2 span{
+      font-size: 15px;
+    }
+      
+    }
+  
